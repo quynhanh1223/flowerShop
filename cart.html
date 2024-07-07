@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy now</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="shop.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #96bbab !important;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><h1>Flowers</h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Style
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Retro</a></li>
+              <li><a class="dropdown-item" href="#">Simple</a></li>
+              <li><a class="dropdown-item" href="#">Modern</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <!-- <form class="d-flex" role="search" id="formsearch"> -->
+          <!-- <input class="form-control me-2" id ="formSearch" type="search" placeholder="Search" aria-label="Search"> -->
+          <!-- <button class="btn btn-outline-success" onclick="user()">Search</button> -->
+          <!-- <button>Log in</button> -->
+          <a href="./login.html" style="padding-right: 5px;" class="logInOut">Log in</a> 
+          <a href="./cart.html" class="logInOut szBuy">Buy</a>
+        <!-- </form> -->
+      </div>
+
+    </div>
+  </nav>
+
+
+
+    <div id="carts" style="padding-bottom: 550px;">
+        <table id="TableGioHang" class="table" >
+            <thead id="gioHangFirst">
+              <tr>
+                <th>STT</th>
+                <th>Ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+                <th>Hành động</th>
+              </tr>
+            </thead>
+            <tbody id="tbodyGioHang">
+              
+            </tbody>
+        </table>
+    </div>
+
+    <!-- <div class="footer">
+      <h1>Flowers</h1>
+      <div class="footerZoom">
+        <p class="footerSmall">Contact <a href="#">Here</a></p>
+        <p class="footerSmall">Question</p>
+        <p class="footerSmall">Help</p>
+      </div>
+      
+    </div> -->
+
+    <div class="footer-full" style="position:relative;">
+      <div class="footer" style="background-image: linear-gradient(#DF826C, #004225); height: 60px; border-radius: 50px 50px 0 0; position:fixed; bottom:0; width:100%;">
+        <div class="foot-icon" style="display: flex; justify-content: space-around; padding-top: 10px;">
+          <a href="https://www.facebook.com/" style="background-color: antiquewhite;" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png" alt="" style="width: 20px; height: 20px;">
+          FACEBOOK
+          </a>
+          <a href="https://chat.zalo.me/" style="background-color: antiquewhite;" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
+            <img src="https://classic.vn/wp-content/uploads/2022/07/zalo-icon.png" alt="" style="width: 20px; height: 20px;">
+          ZALO
+          </a>
+          <a href="https://www.tiktok.com/" style="background-color: antiquewhite;" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
+            <img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" alt="" style="width: 20px; height: 20px;">
+          TIKTOK
+          </a>
+          <a href="#" style="background-color: rgb(138, 49, 42); width: 10%; height: 30px; color: #060408;" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
+            GO TO TOP
+          </a>
+          <a href="https://www.instagram.com/"   style="background-color: antiquewhite;" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/768px-Instagram-Icon.png" alt="" style="width: 20px; height: 20px;">
+          INSTAGRAM
+          </a>
+          <a href="https://www.youtube.com/" style="background-color: antiquewhite;" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
+            <img src="https://img.freepik.com/premium-vector/free-vector-youtube-icon-logo-social-media-logo_901408-454.jpg?w=2000" alt="" style="width: 20px; height: 20px;">
+          YOUTUBE
+          </a>
+          <a href="https://www.pinterest.com/"   style="background-color: antiquewhite; padding-top: 50px;" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
+            <img src="https://w7.pngwing.com/pngs/729/738/png-transparent-computer-icons-quora-logo-social-network-pintrest-text-trademark-logo-thumbnail.png" alt="" style="width: 20px; height: 20px;">
+            PINTEREST
+          </a>
+          
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./cart.js"></script>
+
+</body>
+</html>

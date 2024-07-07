@@ -1,0 +1,129 @@
+body {
+    height: 1850px; 
+}
+/* id # and class. */
+.imgSize {
+    width: 100%;
+    object-fit: cover;
+}
+.textImage {
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 16px;
+    margin: 15px 10px 3px 10px;
+}
+.imgP {
+    justify-content: space-around;
+    /* flex-basis: 30%;  */
+    margin-bottom: 20px;
+}
+.cardMini {
+    /* width: 100%;  */
+    background-color: rgb(241, 241, 215);
+    border-radius: 8px;
+    height: auto;
+}
+
+  /* @media(max-width: 1074px) {
+    body {
+      height: 1750px;
+    }
+  }
+  @media(max-width: 992px) {
+    body {
+      height: 1630px;
+    }
+  } */
+
+
+
+  /* @media(max-width: 710px) {
+    body {
+      height: 1550px;
+    }
+  } */
+
+  /* @media(max-width: 576px) {
+    .imgP {
+        justify-content: space-around;
+    }
+    body {
+      height: 1600px;
+    }
+  } */
+  @media(max-width: 1010px) {
+    .footer {
+        display: none;
+    }
+  }
+
+
+  
+@media(max-width: 767px) {
+  .cardMini{
+    width: 300px ;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1023px) {
+  .cardMini{
+    width: 250px;
+  }
+}
+
+@media(min-width: 1024px) {
+  .imgP {
+    flex-basis: 30%; }
+}
+.AddMore{
+  display: inline-block;
+outline: 0;
+border: 0;
+cursor: pointer;
+transition: box-shadow 0.15s ease,transform 0.15s ease;
+will-change: box-shadow,transform;
+background: #FCFCFD;
+box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+height: 48px;
+padding: 0 32px;
+font-size: 18px;
+border-radius: 6px;
+color: #36395a;
+transition: box-shadow 0.15s ease,transform 0.15s ease;
+}
+.AddMore:hover {
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+  transform: translateY(-2px);
+}
+.AddMore:active{
+  box-shadow: inset 0px 3px 7px #d6d6e7;
+  transform: translateY(2px);
+}
+
+
+.logInOut{
+  text-decoration: none;
+
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  text-align: center;
+  border: 0;
+  padding: 7px 16px;
+  min-height: 36px;
+  min-width: 36px;
+  color: #ffffff;
+  background: #008060;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+  :hover {
+      background: #006e52;
+  }
+
+}
+.szBuy{
+  margin-right: 7px;
+  margin-left: 15px;
+}

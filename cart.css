@@ -1,0 +1,52 @@
+#TableGioHang {
+    font-size: large;
+    width: 100%;
+    text-align: center;
+}
+
+/* #gioHangFirst{
+    width: 100%;
+}
+#tbodyGioHang{
+    width: 100%;
+} */
+.imgSize{
+    height: 120px;
+}
+.footer{
+    background-color: #96bbab;
+    border: none;
+    padding: 0;
+    /* width: 100%; */
+    margin: 0;
+}
+.footer a{
+    color: black;
+}
+.footerZoom{
+    display: flex;
+}
+.footerSmall{
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10%;
+}
+.delete{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 7px 16px;
+    min-height: 36px;
+    min-width: 36px;
+    color: #ffffff;
+    background: #008060;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+    :hover {
+        background: #006e52;
+    }
+}

@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
+    
+</head>
+<body>
+    
+    <!-- <div id="firebaseui-auth-container"> </div> -->
+
+    <div class="container login-container">
+        <div class="row">
+            <div class="col-md-6 login-form-1">
+                <h3>LOGIN</h3>
+                <!-- <div id="firebaseui-auth-container"> </div> -->
+
+                
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Email *" value="" id="login-email"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Your Password *" value="" id="login-password" />
+                    </div>
+                    <a class="form-group">
+                        <button type="submit" class="btnSubmit" onclick="handleLogin()" style="margin-bottom: 30px;"> LOGIN </button>
+                        <button  type="submit" class="btnSubmit" > <a href="register.html" style="color: #fff; list-style: none; text-decoration:none">signup</a> </button>
+                    </a>
+                    <div class="form-group">
+                        <a href="#" class="ForgetPwd">Forget Password?</a>
+                        <div id="firebaseui-auth-container"> </div>
+
+                    </div>
+
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+
+    <script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyBlMSnc8_U_J4hCzvU5fKrIYdqacD-GfCM",
+        authDomain: "buoi-7-a5761.firebaseapp.com",
+        projectId: "buoi-7-a5761",
+    };
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+ <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+ <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+
+
+    <script src ="login_register.js"></script>
+
+</body>
+</html>
